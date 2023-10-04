@@ -255,13 +255,14 @@ footer p {
 
 #tonSVG {
     position: absolute;
+    width: 25vw;
     bottom: 3rem;
     left: 8vw;
 }
 
 #flowerSVG {
     position: absolute;
-    bottom: 9rem;
-    left: 38vw;
-    scale: 4;
+    bottom: 6rem;
+    left: 35vw;
+    width: 5vw;
 }
