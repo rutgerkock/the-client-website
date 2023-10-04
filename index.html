@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js" defer></script> 
     <title>b-Rain</title>
 </head>
 <body>
@@ -14,29 +15,116 @@
             </div>
             <nav class="nav-links">
                 <ul>
-                    <li><a class="links" href="#">Home</a></li>
-                    <li><a class="links" href="#">Contact</a></li>
+                    <li><a class="links" href="#mainSection">Home</a></li>
+                    <li><a class="links" href="#contactSection">Contact</a></li>
                     <button>Menu ▾</button>
                 </ul>
             </nav>
         </div>
-        <progress class="header-line" value="1" min="0" max="100"></progress>
+        <progress id="header-line" class="header-line" value="0" min="0" max="100"></progress>
     </header>
     
     <main>
-        <section class="mainSection">
+
+        <section class="mainSection" id="mainSection">
             <div class="mainTitle">
                 <h1>De toekomst van water</h1>
                 <h2>Wees slim met ons water, be b-RAIN!</h2>
             </div>
         </section>
 
-        <section class="secondSection">
+        <section class="secondSection" id="waaromSection">
             <div class="secondTitle">
-                <h1>De toekomst van water</h1>
-                <h2>Wees slim met ons water, be b-RAIN!</h2>
+                <h1>Waarom?</h1>
+                <p>
+                    Onze wereld wordt geconfronteerd met steeds extremere weersomstandigheden.
+                    We krijgen te maken met langdurige droogte en intensere neerslag. 
+                    Dit zorgt ervoor dat we, om de stad leefbaar te houden, 
+                    beter voorbereid moeten zijn op dergelijke extremen. 
+                    Iedereen kan helpen in deze opgave: bewoners, bedrijven en gemeenten. 
+                    <br><br>
+                    <a class="meerLezen">Meer lezen ></a>
+                </p>
             </div>
         </section>
+
+        <section class="secondSection">
+            <div class="secondTitle">
+                <h1>Waarom bRAIN?</h1>
+                <p>
+                    B-RAIN is de manier om zo optimaal mogelijk om te gaan met de neerslag 
+                    rondom je huis. Met slimme technologie, gebaseerd op weersvoorspellingen, 
+                    regelt ons product automatisch de hoeveelheid water in de regenton, 
+                    zodat je altijd het meeste uit je waterreservoir haalt zonder er tijd aan kwijt te zijn.
+                    <br><br>
+                    <a class="meerLezen">Meer lezen ></a>
+                </p>
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <div class="secondTitle">
+                <h1>De Brain-app</h1>
+                <p>
+                    Met behulp van de gratis Brain-app heeft u ieder moment van de dag 
+                    inzicht in uw wateropslag. Op deze manier krijgt u inzicht in de 
+                    hoeveelheid water die u beschikbaar heeft, hoeveel u bespaard heeft maar 
+                    ook wat de verwachtte wateropslag is voor de komende zeven dagen. 
+                    <br><br>
+                    <a class="meerLezen">Meer lezen ></a>
+                </p>
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <div class="secondTitle">
+                <h1>Lezen</h1>
+                <p>
+                    Meer lezen over b-RAIN? Hier vind je gerelateerde artikelen.
+                </p>
+            </div>
+            <div class="articles">
+                <div class="articleContainer">
+                    <img class="articleImage" src="assets/article1.png" alt="article1">
+                    <div class="textContainer">
+                        <a href="https://www.telegraaf.nl/bRAIN" target="_blank">Telegraaf.nl</a>
+                        <p>Eteck en SPATwater over samenwerking</p>
+                    </div>
+                </div>
+                <div class="articleContainer">
+                    <img class="articleImage" src="assets/article2.png" alt="article2">
+                    <div class="textContainer">
+                        <a href="https://www.telegraaf.nl/bRAIN" target="_blank">Telegraaf.nl</a>
+                        <p>Onderdeel van de klimaatbank</p>
+                    </div>
+                </div>
+                <div class="articleContainer">
+                    <img class="articleImage" src="assets/article3.png" alt="article3">
+                    <div class="textContainer">
+                        <a href="https://www.Nos.nl/bRAIN" target="_blank">Nos.nl</a>
+                        <p>Europees droogte onderzoek</p>
+                    </div>
+                </div>
+                <div class="arrowContainer">
+                    <img class="arrow" src="assets/Arrow1.svg" alt="arrow1">
+                </div>
+        </section>
+
+        <section class="secondSection" id="contactSection">
+            <div class="secondTitle">
+                <h1>Meedoen</h1>
+                <p>
+                    Nieuwsgierig? Stuur ons een mail!
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2023 bRAIN All rights reserved.</p>
+            <img id="tonSVG" src="assets/tonSVG.svg">
+            <img id="flowerSVG" src="assets/flowerSVG.svg">
+        </footer>
+
     </main>
 </body>
 </html>
