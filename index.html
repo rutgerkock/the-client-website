@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <script src="script.js" defer></script> 
     <title>b-Rain</title>
 </head>
@@ -17,7 +18,17 @@
                 <ul>
                     <li><a class="links" href="#mainSection">Home</a></li>
                     <li><a class="links" href="#contactSection">Contact</a></li>
-                    <button>Menu ▾</button>
+                    <div class="dropdown">
+                        <button class="dropdown-button">Menu ▾</button>
+                        <div class="dropdown-content">
+                        <a href="#mainSection">Home</a>
+                          <a href="#waaromSection">Waarom?</a>
+                          <a href="#waarom2Section">Waarom bRAIN?</a>
+                          <a href="#appSection">Brain-app</a>
+                          <a href="#lezenSection">Lezen</a>
+                          <a href="#contactSection">Contact</a>
+                        </div>
+                      </div>
                 </ul>
             </nav>
         </div>
@@ -48,7 +59,7 @@
             </div>
         </section>
 
-        <section class="secondSection">
+        <section class="secondSection" id="waarom2Section">
             <div class="secondTitle">
                 <h1>Waarom bRAIN?</h1>
                 <p>
@@ -62,7 +73,7 @@
             </div>
         </section>
 
-        <section class="secondSection">
+        <section class="secondSection" id="appSection">
             <div class="secondTitle">
                 <h1>De Brain-app</h1>
                 <p>
@@ -76,7 +87,7 @@
             </div>
         </section>
 
-        <section class="secondSection">
+        <section class="secondSection" id="lezenSection">
             <div class="secondTitle">
                 <h1>Lezen</h1>
                 <p>
@@ -85,21 +96,21 @@
             </div>
             <div class="articles">
                 <div class="articleContainer">
-                    <img class="articleImage" src="assets/article1.png" alt="article1">
+                    <img class="articleImage" src="assets/articles/article1.png" alt="article1">
                     <div class="textContainer">
                         <a href="https://www.telegraaf.nl/bRAIN" target="_blank">Telegraaf.nl</a>
                         <p>Eteck en SPATwater over samenwerking</p>
                     </div>
                 </div>
                 <div class="articleContainer">
-                    <img class="articleImage" src="assets/article2.png" alt="article2">
+                    <img class="articleImage" src="assets/articles/article2.png" alt="article2">
                     <div class="textContainer">
                         <a href="https://www.telegraaf.nl/bRAIN" target="_blank">Telegraaf.nl</a>
                         <p>Onderdeel van de klimaatbank</p>
                     </div>
                 </div>
                 <div class="articleContainer">
-                    <img class="articleImage" src="assets/article3.png" alt="article3">
+                    <img class="articleImage" src="assets/articles/article3.png" alt="article3">
                     <div class="textContainer">
                         <a href="https://www.Nos.nl/bRAIN" target="_blank">Nos.nl</a>
                         <p>Europees droogte onderzoek</p>
@@ -117,6 +128,12 @@
                     Nieuwsgierig? Stuur ons een mail!
                 </p>
             </div>
+            <form>
+                <input type="text" placeholder="Naam" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Bericht" required></textarea>
+                <input type="submit" value="Verzenden" id="submitButton">
+            </form>
         </section>
 
         <footer>
@@ -124,7 +141,6 @@
             <img id="tonSVG" src="assets/tonSVG.svg">
             <img id="flowerSVG" src="assets/flowerSVG.svg">
         </footer>
-
     </main>
 </body>
 </html>

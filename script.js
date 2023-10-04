@@ -10,3 +10,14 @@ headerLine.value = percentageScrolled;
 window.addEventListener("scroll", updateHeaderLineValue);
 
 updateHeaderLineValue();
+
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    this.reset();
+
+const originalText = document.getElementById('submitButton').value;
+document.getElementById('submitButton').value = "Verzonden!";
+setTimeout(function () {
+    document.getElementById('submitButton').value = originalText;
+}, 5000);    
+});
