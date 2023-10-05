@@ -92,7 +92,7 @@ p {
 }
 
 .secondSection {
-    padding-top: 14%;
+    padding-top: 80px;
     margin-left: 10%;
 }
 
@@ -356,7 +356,7 @@ input[type=submit]:hover {
         margin-left: 0vw;
     }
     .secondSection {
-        padding-top: 12%;
+        padding-top: 80px;
     }
 
     * {
@@ -375,9 +375,6 @@ input[type=submit]:hover {
     #contactLink, #homeLink {
         display: flex;
     }
-    .secondSection {
-        padding-top: 10%;
-    }
 }
 
 
@@ -387,8 +384,5 @@ input[type=submit]:hover {
         background-position: center bottom, 75vw -10vh;
         background-size: 100vw auto, 15rem;
         background-repeat: no-repeat;    
-    }
-    .secondSection {
-        padding-top: 8%;
     }
 }
