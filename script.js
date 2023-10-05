@@ -22,20 +22,21 @@ setTimeout(function () {
 }, 5000);    
 });
 
-// Add this JavaScript code to toggle the dropdown on click
 document.addEventListener('DOMContentLoaded', function() {
     var dropdowns = document.querySelectorAll('.dropdown');
-    
+    var body = document.body;
+
     dropdowns.forEach(function(dropdown) {
         var dropdownContent = dropdown.querySelector('.dropdown-content');
-        
+
         dropdown.addEventListener('click', function() {
-            if (dropdownContent.style.display === 'block') {
-                dropdownContent.style.display = 'none';
+            if (dropdownContent.style.height === '0px' || dropdownContent.style.height === '') {
+                dropdownContent.style.height = dropdownContent.scrollHeight + 'px';
+                body.style.overflow = 'hidden'; 
             } else {
-                dropdownContent.style.display = 'block';
+                dropdownContent.style.height = '0';
+                body.style.overflow = 'auto'; 
             }
         });
     });
 });
-

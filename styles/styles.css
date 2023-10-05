@@ -183,26 +183,32 @@ ul button:hover {
 .dropdown {
     margin-right: 1rem;
 }
-  
+
 .dropdown-content {
-    display: none;
+    display: block;
+    height: 0; 
+    overflow: hidden;
     position: absolute;
     background-color: white;
+    margin-top: 0.9vh;
     z-index: 10;
-    border-radius: 0.5rem;
+    width: 100vw;
+    left: 0;
+    transition: height 0.3s ease-in-out;
 }
 
 .dropdown-content a {
-    display: block;
+    display: flex;
     text-decoration: none;
-    padding: 0.3rem;
-    font-size: 1.2rem;
-    line-height: 1rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    justify-content: center;
 }
 
 .dropdown-content a:hover {
     color: var(--highlight-color);
 }
+
 
 .articles {
     display: flex;
