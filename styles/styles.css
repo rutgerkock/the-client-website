@@ -82,7 +82,7 @@ p {
 }
 
 .mainSection {
-    background-image: url(../assets/mainSVG3.svg);
+    background-image: url(../assets/mainSVG4.svg);
     background-position: center bottom;
     background-size: 100vw auto;
     background-repeat: no-repeat;
@@ -101,7 +101,6 @@ header {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 0.2%;
     position: fixed;
     width: 100%;
     z-index: 12;
@@ -136,6 +135,7 @@ header .links:hover, header h1:hover{
 
 .nav-logo{
     margin-bottom: 0.6%;
+    padding: 0.4%;
 }
 
 .nav-links ul {
@@ -178,6 +178,10 @@ ul button {
 
 ul button:hover {
     color: var(--highlight-color);
+}
+
+.dropdown {
+    margin-right: 1rem;
 }
   
 .dropdown-content {
