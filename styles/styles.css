@@ -266,8 +266,10 @@ footer {
 
 footer p {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
 #tonSVG {
@@ -287,15 +289,14 @@ footer p {
 
 form {
     display: flex;
+    position: absolute;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-left: 20vw;
     margin-top: 4vw;
 }
 
 input[type=text], input[type=email], textarea, input[type=submit] {
-    width: 50%;
+    width: 100%;
     padding: 12px 12px;
     margin: 0.7rem;
     border: none;
@@ -306,7 +307,7 @@ input[type=text], input[type=email], textarea, input[type=submit] {
 }
 
 textarea {
-    height: 12rem;
+    height: 25vh;
     resize: none;
 }
 
@@ -344,7 +345,7 @@ input[type=submit]:hover {
 
     * {
             --title-font-size: 3.5rem;
-    --second-font-size: 1.6rem;
+            --second-font-size: 1.6rem;
     }
     
 }
