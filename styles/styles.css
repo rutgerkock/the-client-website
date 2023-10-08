@@ -194,7 +194,7 @@ ul button:hover {
     z-index: 10;
     width: 100vw;
     left: 0;
-    transition: height 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .dropdown-content a {
@@ -261,9 +261,6 @@ ul button:hover {
     text-decoration: underline;
 }
 
-#contactSection {
-    height: 85vh;
-}
 footer {
     background-color: #AEDBAB;
     height: 15vh;
@@ -278,20 +275,19 @@ footer p {
     white-space: nowrap;
 }
 
+#contactSection {
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+}
+
 #tonSVG {
-    position: absolute;
-    width: 25vw;
-    bottom: 3rem;
-    left: 8vw;
+    display: none;
 }
 
 #flowerSVG {
-    position: absolute;
-    bottom: 6rem;
-    left: 35vw;
-    width: 5vw;
+    display: none;
 }
-
 
 form {
     display: flex;
@@ -299,6 +295,7 @@ form {
     flex-direction: column;
     justify-content: center;
     margin-top: 4vw;
+    width: 75%;
 }
 
 input[type=text], input[type=email], textarea, input[type=submit] {
@@ -353,6 +350,14 @@ input[type=submit]:hover {
             --title-font-size: 3.5rem;
             --second-font-size: 1.6rem;
     }
+
+    #flowerSVG {
+        display: flex;
+        position: absolute;
+        bottom: 9%;
+        right: 7%;
+        scale: 4;
+    }
     
 }
 
@@ -369,6 +374,22 @@ input[type=submit]:hover {
     .articleContainer {
         min-width: 23rem;
     }
+
+    form {
+        width: 50%;
+    }
+
+    #flowerSVG {
+        right: 35%;
+    }
+
+    #tonSVG {
+        display: flex;
+        position: absolute;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        right: -22%;
+    }
 }
 
 
@@ -378,5 +399,15 @@ input[type=submit]:hover {
         background-position: center bottom, 75vw -10vh;
         background-size: 100vw auto, 15rem;
         background-repeat: no-repeat;    
+    }
+}
+
+
+@media (min-width: 1300px) {
+    #tonSVG {
+        right: 2%;
+    }
+    #flowerSVG {
+        right: 40%;
     }
 }
