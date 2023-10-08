@@ -291,6 +291,7 @@ footer p {
     height: 85vh;
     overflow: hidden;
     position: relative;
+    margin-right: 0;
 }
 
 #tonSVG {
@@ -366,9 +367,9 @@ input[type=submit]:hover {
     #flowerSVG {
         display: flex;
         position: absolute;
-        bottom: 9%;
+        bottom: 6%;
         right: 7%;
-        scale: 4;
+        scale: 3;
     }
     
 }
@@ -392,7 +393,7 @@ input[type=submit]:hover {
     }
 
     #flowerSVG {
-        right: 35%;
+        right: 30%;
     }
 
     #tonSVG {
@@ -412,6 +413,10 @@ input[type=submit]:hover {
         background-size: 100vw auto, 15rem;
         background-repeat: no-repeat;    
     }
+    
+    #flowerSVG {
+        right: 20%;
+    }
 }
 
 
@@ -420,6 +425,6 @@ input[type=submit]:hover {
         right: 2%;
     }
     #flowerSVG {
-        right: 40%;
+        right: 30%;
     }
 }
