@@ -67,11 +67,13 @@ h1 {
     color: var(--title-color);
 }
 
-h2 {
+#underTitle {
     font-size: var(--second-font-size);
     font-weight: var(--second-font-weight);
     font-family: var(--title-font);
     color: var(--under-title-color);
+    width: 75%; 
+    word-wrap: break-word; 
 }
 
 p, .meerLezen{
@@ -387,7 +389,12 @@ input[type=submit]:hover {
     .dropdown-content a {
         font-size: 1.5rem;
         line-height: 3rem;
-    }    
+    }
+
+    #underTitle {
+        width: 100%;
+        word-wrap: break-word; 
+    }
 }
 
 @media (min-width: 800px) {
