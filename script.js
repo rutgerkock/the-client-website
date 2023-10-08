@@ -40,3 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+var meerLezenButtons = document.querySelectorAll(".meerLezen");
+
+meerLezenButtons.forEach(function(button) {
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        var extraText = button.parentElement.querySelector(".extraText");
+        if (extraText.style.display === "none" || extraText.style.display === "") {
+            extraText.style.display = "block";
+        } else {
+            extraText.style.display = "none";
+        }
+    });
+});
