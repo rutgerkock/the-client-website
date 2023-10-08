@@ -317,6 +317,10 @@ form {
     width: 75%;
 }
 
+#nieuwsgierig {
+    width: 80%;
+}
+
 input[type=text], input[type=email], textarea, input[type=submit] {
     width: 100%;
     padding: 12px 12px;
@@ -425,6 +429,12 @@ input[type=submit]:hover {
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         right: -22%;
+    }
+
+    footer p {
+        left: auto;
+        right: -10%;
+        top: 68%;
     }
 }
 
