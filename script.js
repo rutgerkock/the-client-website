@@ -32,10 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdown.addEventListener('click', function() {
             if (dropdownContent.style.height === '0px' || dropdownContent.style.height === '') {
                 dropdownContent.style.height = dropdownContent.scrollHeight + 'px';
-                body.style.overflow = 'hidden'; 
             } else {
                 dropdownContent.style.height = '0';
-                body.style.overflow = 'auto'; 
             }
         });
     });
