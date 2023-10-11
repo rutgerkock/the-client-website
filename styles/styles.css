@@ -386,7 +386,7 @@ form {
 input[type=text], input[type=email], textarea, input[type=submit] {
     width: 100%;
     padding: 12px 12px;
-    margin: 0.7rem;
+    margin-top: 1rem;
     border: none;
     border-bottom: 0.15rem solid var(--second-title-color);
     font-size: var(--third-font-size);
@@ -515,11 +515,6 @@ input[type=submit]:hover {
         bottom: -1%;
     }
 
-    footer p {
-        left: auto;
-        right: -10%;
-        top: 68%;
-    }
     #appImage {
         max-width: 40vw;
     }
