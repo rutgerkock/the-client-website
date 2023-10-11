@@ -150,6 +150,7 @@ p, .meerLezen{
 
 #appImage {
     margin-top: 5%;
+    margin-left: 10%;
     max-width: 80vw;
 }
 
@@ -477,6 +478,10 @@ input[type=submit]:hover {
         background-size: 85vw auto;
         background-repeat: no-repeat;
     }
+    
+    #appImage {
+        max-width: 60vw;
+    }
 }
 
 @media (min-width: 800px) {
@@ -514,6 +519,9 @@ input[type=submit]:hover {
         right: -10%;
         top: 68%;
     }
+    #appImage {
+        max-width: 40vw;
+    }
     
 }
 
@@ -539,6 +547,22 @@ input[type=submit]:hover {
     
     #waaromSection p{
         max-width: 40vw;    
+    }
+
+    #appSection p{
+        max-width: 40vw;
+    }
+    #waarom2Section p{
+        max-width: 40vw;    
+    }
+    #appImage {
+        display: none;
+    }
+    #backgroundImage {
+        background-image: url(../assets/app.svg);
+        background-position: 90% bottom;
+        background-size: min(30%, 20em) auto;
+        background-repeat: no-repeat;
     }
 }
 
