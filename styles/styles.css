@@ -512,6 +512,7 @@ input[type=submit]:hover {
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         right: -22%;
+        bottom: -1%;
     }
 
     footer p {
