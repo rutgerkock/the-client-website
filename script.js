@@ -49,6 +49,7 @@ meerLezenButtons.forEach(function(button) {
         event.preventDefault();
         var extraText = button.parentElement.querySelector(".extraText");
         button.classList.toggle("open");
+        button.innerHTML = button.classList.contains("open") ? "Minder lezen" : "Meer lezen";
 
         if (extraText.style.display === "none" || extraText.style.display === "") {
             extraText.style.display = "block";

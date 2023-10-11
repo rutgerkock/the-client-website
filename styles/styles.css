@@ -298,6 +298,10 @@ ul button:hover {
     margin-right: 0;
 }
 
+#lezenSection p {
+    max-width: 80%;
+}
+
 .articleContainer {
     display: flex;
     flex-direction: column;
@@ -375,7 +379,6 @@ form {
     position: absolute;
     flex-direction: column;
     justify-content: center;
-    margin-top: 4vw;
     width: 80%;
 }
 
