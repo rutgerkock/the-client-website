@@ -16,9 +16,14 @@
     --third-font-size: 1.4rem;
 }
 
-html {
-    scroll-behavior: smooth;
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
+
+
 
 body {
     display: flex;
@@ -60,6 +65,53 @@ main {
     min-width: 24rem;
 }
 
+.mainTitle h1 {
+    font-size: 3.5rem;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    gap: .25em;
+}
+
+.dropdown-button::after {
+    content:"";
+    display: block;
+    transition: rotate 0.3s ease;
+    line-height: 1em;
+    clip-path:polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
+    background-color: currentColor; 
+    width:.5em;
+    aspect-ratio: 1/.86;
+}
+
+.dropdown-button.open:after {
+    rotate: 180deg;
+}
+
+.meerLezen {
+    gap: 0.5em;
+}
+
+
+.meerLezen::after {
+    content:"";
+    display: block;
+    transition: rotate 0.3s ease;
+    line-height: 1em;
+    clip-path:polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+    background-color: currentColor; 
+    width:.5em;
+    aspect-ratio: 1/.86;
+    align-self: center;
+    transition: 0.3s ease;
+}
+
+.meerLezen.open:after {
+    rotate: 180deg;
+}
+
 h1 {
     font-size: var(--title-font-size);
     font-family: var(--title-font);
@@ -68,7 +120,7 @@ h1 {
 }
 
 #underTitle {
-    font-size: var(--second-font-size);
+    font-size: 1.5rem;
     font-weight: var(--second-font-weight);
     font-family: var(--title-font);
     color: var(--under-title-color);
@@ -89,10 +141,16 @@ p, .meerLezen{
     cursor: pointer;
     background: none;
     border: none;
+    display: flex;
 }
 
 .extraText {
     display: none;
+}
+
+#appImage {
+    margin-top: 5%;
+    max-width: 80vw;
 }
 
 .mainSection {
@@ -143,13 +201,12 @@ header .links:hover, header h1:hover{
 .nav-container {
     display: flex;
     align-items: center;
-    width:100%;
+    width: 100%;
     justify-content: space-between;
 }
 
 .nav-logo{
     margin-bottom: 0.6%;
-    padding: 0.4%;
 }
 
 .nav-links ul {
@@ -223,6 +280,10 @@ ul button:hover {
     color: var(--highlight-color);
 }
 
+#waaromSection img{
+    margin-top: 10%;
+    width: 100%;
+}
 
 .articles {
     display: flex;
@@ -314,7 +375,7 @@ form {
     flex-direction: column;
     justify-content: center;
     margin-top: 4vw;
-    width: 75%;
+    width: 80%;
 }
 
 #nieuwsgierig {
@@ -343,8 +404,13 @@ input[type=submit] {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
 }
+
+input[type=submit]:active {
+    translate: 0 2px;;
+}
+
 
 input[type=submit]:hover {
     background-color: var(--under-title-color);
@@ -360,7 +426,8 @@ input[type=submit]:hover {
     }
     .nav-container {
         justify-content: space-between;
-        margin-right: 10px;
+        width:80%;
+        margin-left: 10%;
     }
     .nav-container ul {
         margin-left: 0vw;
@@ -370,8 +437,12 @@ input[type=submit]:hover {
     }
 
     * {
-            --title-font-size: 3.5rem;
-            --second-font-size: 1.6rem;
+            --title-font-size: 2.5rem;
+            --second-font-size: 1.2rem;
+    }
+
+    #waaromSection img{
+        display: none;
     }
 
     #flowerSVG {
@@ -383,21 +454,28 @@ input[type=submit]:hover {
     }
 
     .dropdown-content {
-        width: 14vw;
+        width: 10rem;
         left: auto;
-        right: 0;
+        right: 10%;
         position: absolute;
         z-index: 12;
     }
     
     .dropdown-content a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 3rem;
     }
 
     #underTitle {
         width: 100%;
         word-wrap: break-word; 
+    }
+    #waaromSection {
+        height: 85vh;
+        background-image: url(../assets/waaromSection3.svg);
+        background-position: center bottom;
+        background-size: 85vw auto;
+        background-repeat: no-repeat;
     }
 }
 
@@ -436,6 +514,7 @@ input[type=submit]:hover {
         right: -10%;
         top: 68%;
     }
+    
 }
 
 
@@ -450,6 +529,17 @@ input[type=submit]:hover {
     #flowerSVG {
         right: 20%;
     }
+    #waaromSection {
+        height: 85vh;
+        background-image: url(../assets/waaromSection.svg);
+        background-position: center bottom;
+        background-size: 85vw auto;
+        background-repeat: no-repeat;
+    }
+    
+    #waaromSection p{
+        max-width: 40vw;    
+    }
 }
 
 
@@ -461,8 +551,12 @@ input[type=submit]:hover {
         right: 30%;
     }
     .mainSection {
-        background-image: url(../assets/mainSVG.svg), url(../assets/rainSVG.svg), url(../assets/rainSVG.svg);
-        background-position: center bottom, 75vw -10vh, 90vw -10vh;
-        background-size: 100vw auto, 15rem, 15rem;
+        background-image: url(../assets/mainSVG.svg), url(../assets/rainSVG.svg);
+        background-position: center bottom, 73vw -10vh;
+        background-size: 100vw auto, 15rem;
     }
+    #waaromSection {
+        background-size: 75vw auto;
+    }
+
 }
