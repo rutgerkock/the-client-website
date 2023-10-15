@@ -249,7 +249,8 @@ ul button {
 }
 
 ul button:hover {
-    color: var(--highlight-color);
+    background-color: var(--under-title-color);
+    color: white;
 }
 
 .dropdown {
