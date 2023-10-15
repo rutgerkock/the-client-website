@@ -249,8 +249,7 @@ ul button {
 }
 
 ul button:hover {
-    background-color: var(--under-title-color);
-    color: white;
+    color: var(--highlight-color);
 }
 
 .dropdown {
@@ -279,7 +278,8 @@ ul button:hover {
 }
 
 .dropdown-content a:hover {
-    color: var(--highlight-color);
+    color: "white";
+    background-color: var(--under-title-color);
 }
 
 #waaromSection img{
